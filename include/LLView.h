@@ -1,3 +1,7 @@
 /*
 LLView.h
 */
+class LLView 
+{
+
+};

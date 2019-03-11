@@ -1,3 +1,7 @@
 /*
 LLTank.h
 */
+class LLTank 
+{
+
+};
