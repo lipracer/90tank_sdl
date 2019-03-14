@@ -12,6 +12,7 @@ LLGameMgr& LLGameMgr::GetInstance()
 
 LLGameMgr::LLGameMgr()
 {
+	memset(m_game_map, 0, sizeof(m_game_map));
 }
 
 LLGameMgr::~LLGameMgr() 
