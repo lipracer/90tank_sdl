@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3333692B220723AE00865411 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3333692A220723AE00865411 /* main.cpp */; };
+		33D9F567223BCE4E00708EE7 /* LLGameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33D9F562223BCE4E00708EE7 /* LLGameObject.cpp */; };
+		33D9F568223BCE4E00708EE7 /* LLTank.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33D9F563223BCE4E00708EE7 /* LLTank.cpp */; };
+		33D9F569223BCE4E00708EE7 /* LLView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33D9F564223BCE4E00708EE7 /* LLView.cpp */; };
+		33D9F56A223BCE4E00708EE7 /* GlobalV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33D9F565223BCE4E00708EE7 /* GlobalV.cpp */; };
+		33D9F56B223BCE4E00708EE7 /* GlobalF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33D9F566223BCE4E00708EE7 /* GlobalF.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,11 @@
 /* Begin PBXFileReference section */
 		33336927220723AE00865411 /* tank */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tank; sourceTree = BUILT_PRODUCTS_DIR; };
 		3333692A220723AE00865411 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		33D9F562223BCE4E00708EE7 /* LLGameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LLGameObject.cpp; path = ../../../source/LLGameObject.cpp; sourceTree = "<group>"; };
+		33D9F563223BCE4E00708EE7 /* LLTank.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LLTank.cpp; path = ../../../source/LLTank.cpp; sourceTree = "<group>"; };
+		33D9F564223BCE4E00708EE7 /* LLView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LLView.cpp; path = ../../../source/LLView.cpp; sourceTree = "<group>"; };
+		33D9F565223BCE4E00708EE7 /* GlobalV.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GlobalV.cpp; path = ../../../source/GlobalV.cpp; sourceTree = "<group>"; };
+		33D9F566223BCE4E00708EE7 /* GlobalF.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GlobalF.cpp; path = ../../../source/GlobalF.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,11 @@
 			isa = PBXGroup;
 			children = (
 				3333692A220723AE00865411 /* main.cpp */,
+				33D9F566223BCE4E00708EE7 /* GlobalF.cpp */,
+				33D9F565223BCE4E00708EE7 /* GlobalV.cpp */,
+				33D9F562223BCE4E00708EE7 /* LLGameObject.cpp */,
+				33D9F563223BCE4E00708EE7 /* LLTank.cpp */,
+				33D9F564223BCE4E00708EE7 /* LLView.cpp */,
 			);
 			path = tank;
 			sourceTree = "<group>";
@@ -118,6 +133,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33D9F568223BCE4E00708EE7 /* LLTank.cpp in Sources */,
+				33D9F567223BCE4E00708EE7 /* LLGameObject.cpp in Sources */,
+				33D9F56A223BCE4E00708EE7 /* GlobalV.cpp in Sources */,
+				33D9F56B223BCE4E00708EE7 /* GlobalF.cpp in Sources */,
+				33D9F569223BCE4E00708EE7 /* LLView.cpp in Sources */,
 				3333692B220723AE00865411 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +261,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = (
+					../../include,
+					../../SDL/include,
+				);
 			};
 			name = Debug;
 		};
@@ -249,6 +273,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = (
+					../../include,
+					../../SDL/include,
+				);
 			};
 			name = Release;
 		};

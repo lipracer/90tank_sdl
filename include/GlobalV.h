@@ -4,19 +4,30 @@ GlobalV.h
 #ifndef _GLOBAL_H_
 #define _GLOBAL_H_
 
-enum class ConstValue : unsigned long
-{
-	MaxRow = 26,
-	MaxCol = 26,
-};
+#include "LLTank.h"
+#include <thread>
+#include <chrono>
 
-enum class MapElementType
+
+#define	MaxRow  26
+#define	MaxCol  26
+
+using namespace std;
+
+enum class LLMapElementType
 {
 	Empty = 0,
 	Soil= 1,//土块
 	Cement,//水泥
 	Water,//水
 	Grass,//草地
+};
+
+enum class LLTankType : int
+{
+    OurLeftTank = 1,
+    OurRightTank,
+    EnemyNormalTank,
 };
 
 struct LLPoint 
@@ -38,6 +49,22 @@ struct LLCoordinate
 	int x;
 	int y;
 };
+    
+class LLTimer
+{
+public:
+    LLTimer() = delete;
+    LLTimer& operator=(LLTimer&) = delete;
+    LLTimer(LLTimer&) = delete;
+    LLTimer(std::chrono::duration<std::chrono::milliseconds>);
+    ~LLTimer();
+    void StartTimer();
+    void KillTimer();
+public:
+    std::thread m_th;
+private:
+    bool m_is_exit;
+};
 
 class LLGameMgr 
 {
@@ -48,8 +75,10 @@ public:
 	LLGameMgr();
 	~LLGameMgr();
 private:
-	MapElementType m_game_map[ConstValue::MaxRow][ConstValue::MaxCol];
+	LLMapElementType m_game_map[MaxRow][MaxCol];
 	bool LoadMap(int pass);
+    
+    LLTank* TankFactory(LLTankType type);
 };
 
 #endif
