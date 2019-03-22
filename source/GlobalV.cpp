@@ -4,7 +4,7 @@ GlobalV.h
 #include "GlobalV.h"
 #include <memory.h>
 
-LLTimer::LLTimer(std::chrono::duration<std::chrono::milliseconds>):m_is_exit(false)
+LLTimer::LLTimer(std::chrono::milliseconds):m_is_exit(false)
 {
     m_th = thread([this](){
         while (m_is_exit)

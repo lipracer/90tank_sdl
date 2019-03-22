@@ -56,7 +56,7 @@ public:
     LLTimer() = delete;
     LLTimer& operator=(LLTimer&) = delete;
     LLTimer(LLTimer&) = delete;
-    LLTimer(std::chrono::duration<std::chrono::milliseconds>);
+    LLTimer(std::chrono::milliseconds);
     ~LLTimer();
     void StartTimer();
     void KillTimer();
