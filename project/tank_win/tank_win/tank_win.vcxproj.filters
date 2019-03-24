@@ -279,6 +279,9 @@
     <ClInclude Include="..\..\..\SDL\include\SDL_vulkan.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\include\LLApp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -300,6 +303,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\source\LLGameObject.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\LLApp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

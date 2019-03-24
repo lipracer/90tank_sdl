@@ -156,6 +156,7 @@
   <ItemGroup>
     <ClInclude Include="..\..\..\include\GlobalF.h" />
     <ClInclude Include="..\..\..\include\GlobalV.h" />
+    <ClInclude Include="..\..\..\include\LLApp.h" />
     <ClInclude Include="..\..\..\include\LLGameObject.h" />
     <ClInclude Include="..\..\..\include\LLTank.h" />
     <ClInclude Include="..\..\..\include\LLView.h" />
@@ -246,6 +247,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\source\GlobalF.cpp" />
     <ClCompile Include="..\..\..\source\GlobalV.cpp" />
+    <ClCompile Include="..\..\..\source\LLApp.cpp" />
     <ClCompile Include="..\..\..\source\LLGameObject.cpp" />
     <ClCompile Include="..\..\..\source\LLTank.cpp" />
     <ClCompile Include="..\..\..\source\LLView.cpp" />

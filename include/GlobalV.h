@@ -1,13 +1,12 @@
 /*
 GlobalV.h
 */
-#ifndef _GLOBAL_H_
-#define _GLOBAL_H_
+#ifndef __GLOBALV_H__
+#define __GLOBALV_H__
 
 #include "LLTank.h"
 #include <thread>
 #include <chrono>
-
 
 #define	MaxRow  26
 #define	MaxCol  26
